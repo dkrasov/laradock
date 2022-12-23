@@ -11,9 +11,9 @@
 			Example: "yandex.ru", "yandex.ru." and "www.yandex.ru" are different hosts.
             		If port is explicitly specified in URL, the host:port is checked as a whole.
             		If host specified here without port, any port with this host allowed.
-            		"yandex.ru" -> "yandex.ru:443", "yandex.ru:80" etc. is allowed, but "yandex.ru:80" -> only "yandex.ru:80" is allowed. 
+            		"yandex.ru" -> "yandex.ru:443", "yandex.ru:80" etc. is allowed, but "yandex.ru:80" -> only "yandex.ru:80" is allowed.
 			If the host is specified as IP address, it is checked as specified in URL. Example: "[2a02:6b8:a::a]".
-			If there are redirects and support for redirects is enabled, every redirect (the Location field) is checked. 
+			If there are redirects and support for redirects is enabled, every redirect (the Location field) is checked.
 		-->
 
 		<!-- Regular expression can be specified. RE2 engine is used for regexps.
@@ -35,10 +35,9 @@
     <http_port>8123</http_port>
     <tcp_port>9000</tcp_port>
     <!-- For HTTPS and SSL over native protocol. -->
-    <!--
     <https_port>8443</https_port>
     <tcp_port_secure>9440</tcp_port_secure>
-    -->
+    <mysql_port>9004</mysql_port>
 
     <!-- Used with https_port and tcp_port_secure. Full ssl options list: https://github.com/ClickHouse-Extras/poco/blob/master/NetSSL_OpenSSL/include/Poco/Net/SSLManager.h#L71 -->
     <openSSL>
